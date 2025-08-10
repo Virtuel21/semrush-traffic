@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Semrush Incremental Traffic Estimator</title>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Semrush Incremental Traffic Estimator</h1>
+  <input type="file" id="fileInput" accept=".xlsx" />
+  <label>
+    Position improvement:
+    <input type="number" id="improvement" value="1" min="0" />
+  </label>
+  <label>
+    CTR multiplier:
+    <input type="number" id="ctrMultiplier" value="1" step="0.1" min="0" />
+  </label>
+  <button id="runBtn">Estimate</button>
+  <div id="results"></div>
+  <canvas id="chart" width="800" height="400"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
